@@ -1,0 +1,6 @@
+{
+  "name": "AZRYL — Personal Link Hub",
+  "description": "Building digital experiences, websites & useful tools. Connect with AZRYL — Developer, Web Creator, and Tools Builder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
