@@ -319,9 +319,18 @@ export default function App() {
           >
             {(
               [
-                { id: 'all', label: 'All Hub (4)' },
-                { id: 'whatsapp', label: 'WhatsApp Channels (3)' },
-                { id: 'tools', label: 'Tools & Work (1)' },
+                {
+                  id: 'all',
+                  label: `All Hub (${PROFILE_DATA.links.length})`,
+                },
+                {
+                  id: 'whatsapp',
+                  label: `WhatsApp (${PROFILE_DATA.links.filter((l) => l.category === 'whatsapp').length})`,
+                },
+                {
+                  id: 'tools',
+                  label: `Web & Tools (${PROFILE_DATA.links.filter((l) => l.category === 'tools').length})`,
+                },
               ] as { id: FilterCategory; label: string }[]
             ).map((tab) => {
               const isActive = activeFilter === tab.id;
